@@ -6,9 +6,9 @@ Telegram client that forwards all messages from the selected channels/chats to o
 ## Installation
 1. Need python 3.5 or higher
 2. `pip3 install telethon`
-3. `git clone https://github.com/Jipok/TelegramRetranslator`
+3. `wget https://raw.githubusercontent.com/Jipok/TelegramRetranslator/master/retranslator.py`
 4. Register app on my.telegram.org
-5. Change the API_HASH and BOT_ID in the script to values from my.telegram.org
+5. Change the API_HASH and API_ID in the script to values from my.telegram.org
 
 ## Run
 1. `python3 retranslator.py`
