@@ -32,8 +32,6 @@ else:
 
 client = TelegramClient(sys.argv[1], API_ID, API_HASH,
                         #proxy=(socks.SOCKS5, "localhost", int(4567)),
-                        #update_workers=4,
-                        #spawn_read_thread=False
                         )
 
 sent_messages = {}
@@ -122,7 +120,7 @@ async def command_handler(event):
         print('Error:\n', traceback.format_exc())
         await client.delete_dialog(BOT_ID)
         sent_messages.clear()
-        await client.send_message(BOT_ID, "Retranslator 0.3.1 by @Jipok")
+        await client.send_message(BOT_ID, "https://github.com/Jipok/TelegramRetranslator by @Jipok")
         await list_dialogs()
 
 @client.on(events.NewMessage(incoming=True))
@@ -150,12 +148,11 @@ def main():
     # Clear chat with bot
     client.delete_dialog(BOT_ID)
     # Send start messages
-    client.send_message(BOT_ID, "Retranslator 0.3.1 by @Jipok")
+    client.send_message(BOT_ID, "https://github.com/Jipok/TelegramRetranslator by @Jipok")
     asyncio.ensure_future(list_dialogs())
 
 
 with client:
-    #client.loop.run_until_complete(main())
     main()
     print("Successfully started")
     print("Open your telegram client")
