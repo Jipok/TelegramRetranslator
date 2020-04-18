@@ -1,5 +1,5 @@
 # Retranslator
-Telegram client that forwards all messages from the selected channels/chats to one another
+Telegram client that forwards all messages from the selected channels/chats to another one
 
 ![](https://github.com/Jipok/TelegramRetranslator/blob/master/screenshot.png)
 
@@ -36,3 +36,8 @@ python3 retranslator.py another_name
 # or
 ./retranslator.py another_name
 ```
+
+## SOCKS5 proxy
+1. `pip install pysocks`
+2. Uncomment 5th line
+3. Uncomment the 34th line and specify the proxy server
