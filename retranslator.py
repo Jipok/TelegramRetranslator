@@ -8,7 +8,7 @@ import traceback, sys
 
 API_ID = YOUR_API_ID
 API_HASH = 'YOUR_API_HASH'
-BOT_ID = 355186733
+BOT_ID = 'JipokTestBot'
 
 ###################################################################################
 
