@@ -8,7 +8,7 @@ Telegram client that forwards all messages from the selected channels/chats to a
 2. `pip3 install telethon`
 3. `wget https://raw.githubusercontent.com/Jipok/TelegramRetranslator/master/retranslator.py`
 4. Register app on my.telegram.org
-5. Change the API_HASH and API_ID in the script to values from my.telegram.org
+5. Change the `API_HASH` and `API_ID` in the script to values from my.telegram.org
 
 ## Run
 1. `python3 retranslator.py`
